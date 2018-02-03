@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novel Records</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .main{
+                border:2px solid black;
+                width:390px;
+                height:235px;
+                font-size:20px;
+                margin-left:490px;
+                margin-top:63px;
+            }
+        </style>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <form  action="index.jsp" onsubmit="return validation()" method="POST">
+            <div class="main">
+                <table>
+                    <tr><td>Password:</td><td><input type="password" name="passwd" id="passwd"></td></tr>
+                    <tr><td>Novel Name:</td> <td><input type="text" name="novelName" id="novelName"></td></tr>
+                    <tr><td>Author:</td><td><input type="text" name="author" id="author"></td></tr>
+                    <tr><td>Genre:</td><td><input type="text" name="genre" id="genre"></td></tr>
+                    <tr><td>Main Character:</td><td><input type="text" name="mainCharacter" id="mainCharacter"></td></tr>
+                    <tr><td>Rating/Review:</td><td><input type="text" name="rating" id="rating"></td></tr>
+                    <tr><td><input type="radio" name="choice" value="insert" id="insert">Insert To Database</td>
+                        <td><input type="radio" name="choice" value="delete" id="delete">Delete From Database</td></tr>
+                    <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+                </table>
+            </div>
+         </form>
+    </body>
+</html>
