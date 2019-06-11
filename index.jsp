@@ -4,7 +4,7 @@
     Connection con = null;
     String url = "jdbc:mysql://sql2.njit.edu/np397";
     String username = "np397";
-    String password = "password";
+    String password = "*******";
     
     
     
